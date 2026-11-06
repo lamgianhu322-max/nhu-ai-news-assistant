@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Trang trưng bày Nhu’s AI News Assistant — trợ lý biên tập tin tức đa phương tiện.">
+  <title>Nhu’s AI News Assistant — Multimedia News Curator</title>
+  <style>
+    :root{--ink:#132033;--muted:#637187;--paper:#f5f7fb;--white:#fff;--navy:#101827;--blue:#3769f5;--cyan:#82e1d2;--coral:#ff8a75;--line:#e4e9f1;--green:#17825c;--shadow:0 24px 70px rgba(23,39,67,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;color:#eaf0fb}.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:-.02em}.brand-icon{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--coral),#f3bd8b);display:grid;place-items:center;color:#18243a;font-size:20px}.topnav{display:flex;align-items:center;gap:30px;font-size:14px;color:#bdc8d8}.topnav a:hover{color:#fff}.nav-cta{border:1px solid #33445e;padding:9px 15px;border-radius:999px;color:#fff}.hero{background:radial-gradient(ellipse at 80% 25%,#233957 0,transparent 38%),var(--navy);color:#fff;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center;padding:68px 0 90px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#bcece4;font-size:12px;font-weight:750;letter-spacing:.12em;text-transform:uppercase}.pulse{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px #82e1d21b}.hero h1{max-width:680px;margin:20px 0 18px;font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-.055em}.hero h1 span{color:var(--cyan)}.hero-copy{max-width:590px;color:#bdc8d8;font-size:18px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;align-items:center;gap:9px;padding:12px 17px;border-radius:12px;font-weight:700;font-size:14px}.button-primary{background:var(--cyan);color:#122033}.button-quiet{border:1px solid #536176;color:#f4f7fc}.hero-note{margin-top:23px;color:#9eacc0;font-size:12px}.art-card{position:relative;padding:22px;border:1px solid #ffffff20;border-radius:28px;background:linear-gradient(150deg,#ffffff12,#ffffff04);box-shadow:0 35px 90px #0004;transform:rotate(1.2deg)}.art-top{display:flex;justify-content:space-between;color:#aebbd0;font-size:12px}.art-window{margin-top:17px;padding:23px;border-radius:20px;background:#f9fbff;color:var(--ink)}.art-label{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted)}.art-label b{color:#34445d}.wave{width:100%;height:104px;margin:18px 0 13px}.story-mini{display:grid;grid-template-columns:34px 1fr;gap:11px;align-items:start;padding:12px 0;border-top:1px solid var(--line)}.story-dot{width:30px;height:30px;border-radius:10px;background:#e8efff;color:var(--blue);display:grid;place-items:center}.story-mini strong{display:block;font-size:12px;line-height:1.4}.story-mini small{color:var(--muted);font-size:10px}.source-pill{position:absolute;right:-18px;bottom:24px;background:#fff;padding:10px 14px;border-radius:13px;box-shadow:var(--shadow);font-size:12px;font-weight:700;color:#293a50}.section{padding:78px 0}.section-head{max-width:700px;margin-bottom:34px}.kicker{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.section h2{margin:9px 0 12px;font-size:clamp(30px,4vw,45px);line-height:1.12;letter-spacing:-.04em}.section-lead{color:var(--muted);font-size:17px;margin:0}.status-banner{display:flex;align-items:flex-start;gap:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;box-shadow:0 8px 24px #1d35510a}.status-icon{width:34px;height:34px;flex:none;border-radius:11px;background:#e6f7ef;color:var(--green);display:grid;place-items:center;font-weight:900}.status-banner strong{display:block}.status-banner p{margin:3px 0 0;color:var(--muted);font-size:14px}.status-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}.status-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.status-card .tag{display:inline-flex;padding:4px 9px;border-radius:999px;background:#e8f7ef;color:#14734f;font-size:11px;font-weight:800}.status-card.pending .tag{background:#fff2df;color:#9a5a00}.status-card h3{margin:10px 0 5px;font-size:17px}.status-card p{margin:0;color:var(--muted);font-size:14px}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{min-height:210px;padding:23px;border:1px solid var(--line);background:#fff;border-radius:20px}.feature-icon{width:42px;height:42px;border-radius:13px;background:#edf2ff;color:#315ee8;display:grid;place-items:center;font-size:20px}.feature h3{margin:18px 0 6px;font-size:18px}.feature p{margin:0;color:var(--muted);font-size:14px}.workflow{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 12px 35px #182b4708}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:step}.step{position:relative;padding:18px 14px;border:1px solid var(--line);border-radius:16px;background:#fbfcff;counter-increment:step}.step::before{content:"0" counter(step);display:block;color:var(--blue);font-size:12px;font-weight:850;letter-spacing:.08em;margin-bottom:17px}.step:not(:last-child)::after{content:"→";position:absolute;right:-13px;top:47%;z-index:1;background:#fff;padding:0 3px;color:#9ba8ba}.step strong{font-size:14px;line-height:1.35;display:block}.step small{display:block;color:var(--muted);font-size:12px;margin-top:7px}.quality{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start}.quality-panel{background:var(--navy);color:#fff;border-radius:24px;padding:28px}.quality-panel p{color:#bdc8d8}.quality-list{display:grid;gap:10px}.quality-item{display:grid;grid-template-columns:24px 1fr;gap:12px;padding:15px 0;border-bottom:1px solid var(--line)}.check{color:#13865e;font-weight:900}.quality-item strong{display:block}.quality-item span:last-child{font-size:14px;color:var(--muted)}.report{border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}.report-head{padding:19px 23px;background:#f9fbff;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:center}.report-head strong{display:block}.report-head small{color:var(--muted)}.sample-tag{background:#fff0db;color:#915600;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:850;white-space:nowrap}.report-body{padding:23px}.bilingual{display:grid;grid-template-columns:1fr 1fr;gap:15px}.lang{padding:17px;border:1px solid var(--line);border-radius:16px;background:#fff}.lang h4{margin:0 0 10px;font-size:13px;color:var(--blue)}.lang h5{margin:0 0 8px;font-size:16px;line-height:1.35}.lang p{font-size:13px;color:#506078;margin:7px 0}.lang .meta{font-size:11px;color:#7a8799}.sample-warning{margin-top:15px;padding:12px 14px;border-radius:12px;background:#fff8e9;color:#80510a;font-size:12px}.boundary-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.boundary{padding:23px;border-radius:20px;background:#fff;border:1px solid var(--line)}.boundary h3{margin:0 0 12px}.boundary ul{margin:0;padding-left:19px;color:var(--muted);font-size:14px}.boundary li+li{margin-top:7px}.footer{background:var(--navy);color:#d3dceb;padding:35px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer small{color:#93a2b7}.disclaimer{padding:14px 18px;border-left:3px solid var(--coral);background:#fff5f2;color:#703c31;border-radius:0 12px 12px 0;font-size:13px}.cn{display:block;color:#738096;font-size:13px;line-height:1.55;margin-top:4px}.source-line{border-top:1px solid var(--line);margin-top:21px;padding-top:14px;color:#7c899b;font-size:12px}.video-frame{aspect-ratio:16/9;overflow:hidden;border-radius:17px;background:#101827}.video-frame iframe{display:block;width:100%;height:100%;border:0}.clip-meta{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:15px 0 20px}.clip-meta p{margin:0}.clip-title{font-weight:750}.clip-link{color:var(--blue);overflow-wrap:anywhere;font-weight:700;font-size:13px}.clip-report{background:#f8faff;border:1px solid var(--line);padding:16px;border-radius:15px}.clip-report p{font-size:14px;color:#506078;margin:5px 0}.boundary li .cn{margin-top:3px}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:38px;padding:54px 0 68px}.art-card{max-width:570px;margin:auto}.feature-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.step:not(:last-child)::after{display:none}.quality{grid-template-columns:1fr}.topnav{gap:14px}.topnav a:not(.nav-cta){display:none}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.topbar{height:65px}.hero-grid{padding:43px 0 56px}.hero-copy{font-size:16px}.section{padding:57px 0}.status-grid,.feature-grid,.bilingual,.boundary-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.step{display:grid;grid-template-columns:40px 1fr;column-gap:10px;align-items:start;padding:14px}.step::before{grid-row:span 2;margin:2px 0}.step small{margin-top:3px}.workflow{padding:16px}.report-head{align-items:flex-start;flex-direction:column}.footer-row{align-items:flex-start;flex-direction:column}.source-pill{right:-5px}.art-card{padding:13px}.art-window{padding:17px}.clip-meta{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="wrap">
+      <nav class="topbar" aria-label="Điều hướng chính">
+        <a class="brand" href="#top"><span class="brand-icon" aria-hidden="true">✦</span><span>Nhu’s AI News Assistant</span></a>
+        <div class="topnav"><a href="#about">Giới thiệu</a><a href="#workflow">Quy trình</a><a href="#sample">Báo cáo mẫu</a><a class="nav-cta" href="#boundaries">Phạm vi Agent</a></div>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="pulse"></span> MULTIMEDIA NEWS CURATOR · 展示页面</div>
+          <h1>Biến nội dung đa phương tiện thành <span>bản tin đáng chú ý.</span></h1>
+          <p class="hero-copy">Trợ lý biên tập tin tức được thiết kế để thu thập âm thanh và video từ nhiều nguồn, đánh giá thông tin và tổng hợp báo cáo có dẫn nguồn.</p><p class="cn">多媒体新闻编辑助手，旨在从多个来源收集音频和视频，评估信息并整理带有来源链接的报告。</p>
+          <div class="hero-actions"><a class="button button-primary" href="#sample">Xem video đã chọn <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#about">Khám phá Agent <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-note">Trang giới thiệu Agent · có video gốc để xem · không kết nối Hermes, không gọi API và không tự gửi yêu cầu xử lý</p><p class="cn" style="color:#9eacc0">Agent 展示页 · 可观看原视频 · 不连接 Hermes、不调用 API，也不会自动提交处理请求</p>
+        </div>
+        <div class="art-card" aria-label="Minh họa luồng âm thanh, video và bản tin">
+          <div class="art-top"><span>NEWSROOM / 多媒体编辑台</span><span>01 — 05</span></div>
+          <div class="art-window">
+            <div class="art-label"><b>MEDIA IN → NEWS OUT</b><span>DEMO VISUAL</span></div>
+            <svg class="wave" viewBox="0 0 500 120" role="img" aria-label="Minh họa sóng âm chuyển thành các dòng tin">
+              <defs><linearGradient id="wg" x1="0" x2="1"><stop stop-color="#ff8a75"/><stop offset=".52" stop-color="#587dff"/><stop offset="1" stop-color="#5ccbb5"/></linearGradient></defs>
+              <rect x="1" y="1" width="498" height="118" rx="17" fill="#f3f6ff"/>
+              <g stroke="url(#wg)" stroke-width="5" stroke-linecap="round" opacity=".95">
+                <path d="M29 60h20m9-17v34m14-48v62m15-38v15m15-28v41m15-49v57m15-35v15m15-24v33m15-45v56m15-30v14m15-18v23m15-37v49m15-25v9m15-16v24m15-35v46m15-26v8m15-19v30m15-39v49m15-27v7m15-18v30m15-37v44m15-22v3m15-12v24m15-32v41m15-23v5m15-15v24m15-30v37m15-20v3m15-13v23m15-29v34m15-17v2"/>
+              </g>
+              <circle cx="448" cy="60" r="19" fill="#fff" stroke="#dce5fb"/><path d="m444 50 15 10-15 10z" fill="#3769f5"/>
+              <text x="28" y="105" fill="#697892" font-size="10" font-family="sans-serif">AUDIO</text><text x="434" y="105" fill="#697892" font-size="10" font-family="sans-serif">NEWS</text>
+            </svg>
+            <div class="story-mini"><span class="story-dot">↗</span><span><strong>Đối chiếu nguồn · 核验来源</strong><small>Độ mới · độ tin cậy · tính liên quan</small></span></div>
+            <div class="story-mini"><span class="story-dot">✎</span><span><strong>Tóm tắt có căn cứ · 有据摘要</strong><small>Liên kết nguồn đi cùng thông tin</small></span></div>
+          </div>
+          <div class="source-pill">◉ Nội dung mẫu · 示例内容</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Giới thiệu · 介绍</div><h2>Nhu’s AI News Assistant</h2><p class="section-lead">Trợ lý thu thập, phân tích và chắt lọc tin tức nổi bật từ nội dung âm thanh, video.</p><p class="cn">从音频和视频内容中收集、分析并筛选值得关注新闻的助手。</p></div>
+        <div class="status-banner"><span class="status-icon">✦</span><div><strong>Trợ lý biên tập đa phương tiện · 多媒体新闻编辑助手</strong><p>Nhiệm vụ: tiếp nhận nguồn, trích xuất nội dung, đánh giá độ tin cậy và mức độ nổi bật, rồi tổng hợp báo cáo có dẫn nguồn.</p><p class="cn">工作内容：接收来源、提取内容、评估可信度和新闻价值，并整理附有来源链接的报告。</p></div></div>
+        <div class="status-grid">
+          <article class="status-card"><span class="tag">CHỨC NĂNG · 功能</span><h3>Thu thập và đọc nội dung</h3><p>Nhận link video hoặc tệp âm thanh/video; kiểm tra nguồn, khả năng truy cập và chất lượng nội dung.</p><p class="cn">接收视频链接或音视频文件；检查来源、可访问性和内容质量。</p></article>
+          <article class="status-card"><span class="tag">CHỨC NĂNG · 功能</span><h3>Chắt lọc tin có giá trị</h3><p>Ưu tiên độ tin cậy, tính chính xác, độ mới và mức độ liên quan; không đánh giá chỉ bằng lượt xem.</p><p class="cn">优先考虑可信度、准确性、时效性和相关性；不只依据浏览量判断。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#fff" aria-labelledby="features-title">
+      <div class="wrap"><div class="section-head"><div class="kicker">Chức năng · 功能介绍</div><h2 id="features-title">Một trợ lý biên tập, từ nguồn đến báo cáo.</h2><p class="section-lead">Tiếp nhận nội dung đa phương tiện, chắt lọc thông tin nổi bật và chuẩn bị báo cáo song ngữ có dẫn nguồn.</p><p class="cn">接收多媒体内容，筛选重要信息，并整理带有来源链接的双语报告。</p></div>
+        <div class="feature-grid">
+          <article class="feature"><span class="feature-icon">◎</span><h3>Tiếp nhận đa nguồn</h3><p>Link nội dung cụ thể hoặc tệp âm thanh/video như MP3, MP4, WAV, M4A và định dạng tương tự.</p><p class="cn">接收具体内容链接，或 MP3、MP4、WAV、M4A 等音视频文件。</p></article>
+          <article class="feature"><span class="feature-icon">⌁</span><h3>Phân tích và chọn lọc</h3><p>Nhận diện nội dung, đối chiếu nguồn, gộp tin trùng và chọn chủ đề có giá trị thông tin.</p><p class="cn">识别内容、交叉核对来源、合并重复新闻，并筛选有信息价值的主题。</p></article>
+          <article class="feature"><span class="feature-icon">↗</span><h3>Báo cáo có dẫn nguồn</h3><p>Tóm tắt, thông tin quan trọng, chủ đề nổi bật và liên kết nguồn được tổ chức thành báo cáo mới.</p><p class="cn">将摘要、关键信息、热门主题和来源链接整理成新报告。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="wrap"><div class="section-head"><div class="kicker">Quy trình hoạt động · 工作流程</div><h2>Đọc nguồn, kiểm chứng, rồi mới tổng hợp.</h2><p class="section-lead">Quy trình từ lúc nhận link hoặc tệp đến khi hoàn thành báo cáo tin tức.</p><p class="cn">从接收链接或文件开始，直到完成新闻报告。</p></div>
+        <div class="workflow"><div class="steps">
+          <div class="step"><strong>Tiếp nhận nguồn</strong><small>Ghi loại, định dạng, nguồn gốc và ngày đăng nếu có.</small><small class="cn">记录类型、格式、来源及可获取的发布日期。</small></div>
+          <div class="step"><strong>Kiểm tra truy cập</strong><small>Đánh dấu link lỗi, tệp hỏng hoặc nội dung không rõ.</small><small class="cn">标记失效链接、损坏文件或不清晰的内容。</small></div>
+          <div class="step"><strong>Trích xuất nội dung</strong><small>Đọc văn bản hoặc chuyển lời nói thành nội dung có thể phân tích.</small><small class="cn">读取文本，或将语音转为可分析内容。</small></div>
+          <div class="step"><strong>Đánh giá và đối chiếu</strong><small>Xem độ mới, tin cậy, quan tâm, độ phủ nguồn và liên quan.</small><small class="cn">评估时效性、可信度、关注度、来源覆盖和相关性。</small></div>
+          <div class="step"><strong>Tạo báo cáo mới</strong><small>Gắn nguồn, ngày xuất; kiểm tra tài liệu sau khi tạo.</small><small class="cn">注明来源和生成日期；创建后检查文档。</small></div>
+        </div><p class="cn">接收来源 → 检查可访问性 → 提取内容 → 评估并交叉核对 → 创建带来源的新报告。</p></div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#fff">
+      <div class="wrap quality"><div class="quality-panel"><div class="kicker" style="color:var(--cyan)">Tiêu chuẩn chất lượng · 质量标准</div><h2>Độ tin cậy trước độ ồn.</h2><p>Không xếp tin nổi bật chỉ vì có nhiều lượt xem. Thông tin chưa kiểm chứng phải được đánh dấu, không biến thành kết luận.</p><p class="cn" style="color:#bdc8d8">不因浏览量高就将内容列为重要新闻。未经核实的信息会被标记，不会直接作为结论。</p></div><div class="quality-list">
+        <div class="quality-item"><span class="check">01</span><span><strong>Độ tin cậy và chính xác</strong><span>Ưu tiên nguồn rõ ràng, có bằng chứng; tóm tắt không làm sai lệch nguồn.</span><small class="cn">优先采用来源明确、有证据支持的信息；摘要不得歪曲原意。</small></span></div>
+        <div class="quality-item"><span class="check">02</span><span><strong>Độ mới và liên quan</strong><span>Ghi nhận ngày đăng/cập nhật; xem nội dung có giá trị với chủ đề đang quan tâm.</span><small class="cn">记录发布日期或更新时间，并判断内容是否与关注主题相关。</small></span></div>
+        <div class="quality-item"><span class="check">03</span><span><strong>Đối chiếu độc lập</strong><span>Xem nhiều nguồn độc lập có đề cập hay không; lượt tương tác chỉ là một tín hiệu.</span><small class="cn">查看是否有多个独立来源提及；互动量仅作为参考信号之一。</small></span></div>
+        <div class="quality-item"><span class="check">04</span><span><strong>Minh bạch phần chưa rõ</strong><span>Giữ nguyên bất đồng giữa nguồn và chuyển người kiểm tra khi sai khác đổi nghĩa.</span><small class="cn">保留来源之间的分歧；若差异可能改变含义，则交由人工核查。</small></span></div>
+      </div></div>
+    </section>
+
+    <section class="section" id="sample">
+      <div class="wrap"><div class="section-head"><div class="kicker">Video đầu vào · 视频输入</div><h2>Clip Cô Tô bạn đã chọn</h2><p class="section-lead">Mở video ngay trên trang hoặc truy cập nguồn YouTube.</p><p class="cn">可直接在页面中播放视频，也可以前往 YouTube 原始来源观看。</p></div>
+        <article class="report"><div class="report-head"><div><strong>LIFE OF CÔ TÔ | CINEMATIC TRAVEL FILM</strong><small>Nguồn: YouTube</small><p class="cn">来源：YouTube</p></div><span class="sample-tag">VIDEO ĐẦU VÀO · 输入视频</span></div>
+          <div class="report-body"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/RrIAqU4O2tw?rel=0" title="LIFE OF CÔ TÔ | CINEMATIC TRAVEL FILM" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="clip-meta"><p><span class="clip-title">Video gốc · 原视频</span><br><span class="cn">在 YouTube 打开原视频。</span></p><a class="clip-link" href="https://youtu.be/RrIAqU4O2tw" target="_blank" rel="noopener">https://youtu.be/RrIAqU4O2tw ↗</a></div>
+            <div class="clip-report"><b>Thông tin video</b><p><strong>Tiêu đề:</strong> LIFE OF CÔ TÔ | CINEMATIC TRAVEL FILM</p><p><strong>Chủ đề:</strong> Cô Tô · du lịch · phim cinematic</p><p><strong>Nguồn:</strong> YouTube · <a class="clip-link" href="https://youtu.be/RrIAqU4O2tw" target="_blank" rel="noopener">Mở video gốc ↗</a></p><p class="cn"><b>视频信息</b><br>标题：LIFE OF CÔ TÔ | CINEMATIC TRAVEL FILM<br>主题：姑苏岛 · 旅行 · 电影风格短片<br>来源：YouTube 原视频。</p></div>
+          </div></article>
+      </div>
+    </section>
+
+    <section class="section" id="boundaries" style="background:#fff">
+      <div class="wrap"><div class="section-head"><div class="kicker">Phạm vi và ranh giới · 范围与边界</div><h2>Agent không tự vượt quá nguồn và quyền được cấp.</h2></div>
+        <div class="boundary-grid"><article class="boundary"><h3>Agent được thiết kế để <small class="cn">Agent 的设计用途</small></h3><ul><li>Thu thập nội dung từ link hoặc tệp được cung cấp.<small class="cn">收集所提供链接或文件中的内容。</small></li><li>Tóm tắt thông tin có căn cứ, giữ liên kết nguồn.<small class="cn">基于来源进行摘要，并保留来源链接。</small></li><li>Chuyển các điểm mơ hồ, mâu thuẫn hoặc thiếu quyền cho con người.<small class="cn">将模糊、矛盾或权限不足的情况交由人工处理。</small></li><li>Tạo tài liệu mới nếu công cụ và quyền đầu ra thực sự sẵn sàng.<small class="cn">在工具和输出权限可用时创建新文档。</small></li></ul></article><article class="boundary"><h3>Agent không được phép <small class="cn">Agent 的禁止事项</small></h3><ul><li>Tự đăng nội dung lên mạng xã hội.<small class="cn">不得自行将内容发布到社交媒体。</small></li><li>Suy diễn phần bị thiếu hoặc trình bày điều chưa kiểm chứng như sự thật.<small class="cn">不得猜测缺失内容，或将未经核实的信息当作事实。</small></li><li>Xóa dữ liệu gốc hay ghi đè báo cáo cũ.<small class="cn">不得删除原始数据或覆盖旧报告。</small></li><li>Giả vờ đã xử lý nguồn hoặc tạo tài liệu khi chưa xác minh.<small class="cn">未确认前不得声称已处理来源或创建文档。</small></li></ul></article></div>
+        <div class="disclaimer" style="margin-top:18px"><b>Trang giới thiệu.</b> Người xem có thể tìm hiểu chức năng và xem video mẫu; trang không cấp quyền truy cập tài khoản hoặc dữ liệu của bạn.<br><span class="cn">这是 Agent 介绍页面。访客可以了解功能并观看视频示例；页面不会授予访问您账号或数据的权限。</span></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-row"><a class="brand" href="#top"><span class="brand-icon">✦</span><span>Nhu’s AI News Assistant</span></a><small>Trang xem trước tĩnh · Static showcase preview · 2026</small></div></footer>
+</body>
+</html>
